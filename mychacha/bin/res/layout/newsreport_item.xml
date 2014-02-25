@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/lLayout_newsreport_item" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_newsreport_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_newsreport_arrows" android:background="@drawable/arrow_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/lLayout_newsreport_item_detailinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/img_newsreport_arrows" android:layout_alignParentLeft="true">
+            <TextView android:textSize="17.0dip" android:textColor="#ff000000" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_newsreport_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/subtitle" android:layout_gravity="right" android:id="@id/tv_newsreport_item_source" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

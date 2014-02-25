@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/categoryTitle" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/category_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="首页" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/category_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分类浏览" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/categoryButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/categoryTitle">
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_goods" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_marginLeft="8.0dip" android:text="商品分类" android:layout_weight="1.0" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_drug" android:layout_width="wrap_content" android:layout_height="34.0dip" android:text="药品分类" android:layout_weight="1.0" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_antifake" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_marginRight="8.0dip" android:text="防伪分类" android:layout_weight="1.0" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/categoryContent" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/categoryButtons" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/lL_storeprice_item" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_storeprice_substore_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentLeft="true">
+        <TextView android:textSize="17.0dip" android:textColor="#ff000000" android:id="@id/tv_substore_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_substore_arrows" android:background="@drawable/arrow_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <Button android:textSize="16.0dip" android:id="@id/btn_substore_changeprice" android:background="@drawable/account_btn_attention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:text="纠错" android:layout_toLeftOf="@id/img_substore_arrows" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffff0000" android:id="@id/tv_substore_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:singleLine="false" android:layout_toLeftOf="@id/btn_substore_changeprice" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

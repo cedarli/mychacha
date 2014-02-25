@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout_bg" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/otherlogintitlebar" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+      >
+        <TextView android:textSize="20.0dip" android:textColor="@color/status_text" android:id="@id/view_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weibotitle" android:layout_centerInParent="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_otherlogin_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:orientation="vertical" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/otherlogintitlebar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:id="@id/weibo_login_imageview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sina_logo_sina" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              >
+                <EditText android:textSize="18.0dip" android:ellipsize="end" android:id="@id/wbloginname" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:hint="@string/EditTextName" android:singleLine="true" />
+                <EditText android:textSize="18.0dip" android:ellipsize="end" android:id="@id/wbloginpassword" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:hint="@string/EditTextPassword" android:password="true" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:textColor="#ff000000" android:id="@id/RememberMeCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="记住账号密码" />
+                <CheckBox android:textColor="#ff000000" android:id="@id/ConcernWccCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="关注我查查微博" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <Button android:textSize="18.0dip" android:textColor="@color/result_text" android:id="@id/btn_login" android:background="@drawable/xbutton_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/weibologin" android:layout_weight="1.0" />
+                <Button android:textSize="18.0dip" android:textColor="@color/result_text" android:id="@id/btn_register" android:background="@drawable/xbutton_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/register" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

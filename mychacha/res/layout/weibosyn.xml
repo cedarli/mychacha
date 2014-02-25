@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/UserDetailInfoWeiboSynLayout" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/userdetailinfoweibosyn_title_layout" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+      >
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/tv_userdetailinfoweibosyn_titlename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="微博同步" android:layout_centerInParent="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_userdetailinfoweibosyn_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_userdetailinfoweibosyn_add" android:background="@drawable/b_top_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="新增" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/lL_userdetailinfoweibosyn_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/userdetailinfoweibosyn_title_layout" android:layout_alignParentBottom="true">
+        <ListView android:id="@id/userdetailinfoweibosyn_list" android:background="#fff7f7f7" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:cacheColorHint="#00000000" />
+    </LinearLayout>
+</RelativeLayout>

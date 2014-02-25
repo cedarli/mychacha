@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/UserDetailInfoTrendsLayout" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/userdetailinfotrends_title_layout" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+      >
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/tv_userdetailinfotrends_titlename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="动态" android:layout_centerInParent="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_userdetailinfotrends_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/lL_userdetailinfotrends_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/userdetailinfotrends_title_layout" />
+</RelativeLayout>

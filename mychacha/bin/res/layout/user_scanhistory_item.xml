@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/userscanhistory_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_userscanhistory_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_alignParentLeft="true">
+        <CheckBox android:id="@id/checkbox_userscanhistory" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:checked="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <FrameLayout android:id="@id/img_userscanhistory_frame" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_toRightOf="@id/checkbox_userscanhistory" android:layout_centerVertical="true">
+            <ImageView android:id="@id/img_userscanhistory_item" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/photoframe" />
+        </FrameLayout>
+        <ImageView android:id="@id/img_userscanhistory_arrows" android:background="@drawable/arrow_other" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_userscanhistory_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/img_userscanhistory_arrows" android:layout_toRightOf="@id/img_userscanhistory_frame" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/tv_userscanhistory_goodsname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/tv_userscanhistory_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffff0000" android:id="@id/tv_userscanhistory_goodsprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_toLeftOf="@id/tv_userscanhistory_time" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

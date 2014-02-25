@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/startup" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/extra_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/extra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/anzhi" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="安智独家首发 www.anzhi.com" android:layout_below="@id/extra" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

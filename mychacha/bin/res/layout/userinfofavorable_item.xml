@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/lL_userinfofavorable_item" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_userinfofavorable_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentLeft="true">
+        <FrameLayout android:id="@id/img_userinfofavorable_frame" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/img_userinfofavorable_item" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/photoframe" />
+        </FrameLayout>
+        <ImageView android:id="@id/img_userinfofavorable_arrows" android:background="@drawable/arrow_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_userinfofavorable_item_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/img_userinfofavorable_arrows" android:layout_toRightOf="@id/img_userinfofavorable_frame" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/layout_userinfofavorable_item_info_above" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/subtitle" android:id="@id/tv_userinfofavorable_item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/tv_userinfofavorable_item_storename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/tv_userinfofavorable_item_time" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_userinfofavorable_item_info_below" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="14.0dip" android:id="@id/btn_userinfofavorable_item_cancle" android:background="@drawable/account_btn_attention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="取消收藏" android:layout_alignParentRight="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/subtitle" android:id="@id/tv_userinfofavorable_item_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/btn_userinfofavorable_item_cancle" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

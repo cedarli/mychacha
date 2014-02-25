@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/upload_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="20.0dip" android:gravity="center" android:layout_gravity="center" android:id="@id/uploadtitle" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="图片上传" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/upload_bottmom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="20.0dip" android:id="@id/upload_btn_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提交" android:layout_weight="1.0" />
+        <Button android:textSize="20.0dip" android:id="@id/upload_btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退出" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/upload_bottmom" android:layout_below="@id/upload_title">
+        <ImageView android:id="@id/upload_img" android:background="@drawable/photo_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

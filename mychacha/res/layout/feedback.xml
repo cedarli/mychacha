@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/titlebar" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/feedback_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/appname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="意见反馈" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titlebar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingTop="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <AutoCompleteTextView android:textSize="16.0dip" android:gravity="top" android:id="@id/eMail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="请填写您的邮件地址(不能为空)" android:inputType="textEmailAddress" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <EditText android:textSize="16.0dip" android:gravity="top" android:id="@id/Edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/feedbackText" android:maxLength="140" />
+                <Button android:textSize="18.0dip" android:textColor="@color/result_text" android:layout_gravity="center" android:id="@id/send_fb" android:background="@drawable/xbutton_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:text="@string/send_fb" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/imagetextview_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imagetextview_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="18.0dip" android:id="@id/imagetextview_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

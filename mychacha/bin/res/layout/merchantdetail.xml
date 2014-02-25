@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/MerchantLayout" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/MerchantLayout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/merchant_title_layout" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <TextView android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/tv_merchant_titlename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商户结果" android:layout_centerInParent="true" />
+            <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_merchant_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+            <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_merchant_map" android:background="@drawable/b_top_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="地图" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/merchantinfo_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_below="@id/merchant_title_layout">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/layout_merchant_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/img_merchant" android:background="@drawable/default_bmp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/layout_merchant_img">
+                <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/merchant_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RatingBar android:id="@id/ratingbar_merchant_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="3.5" android:stepSize="0.5" style="?android:attr/ratingBarStyleSmall" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="17.0dip" android:textColor="#ff999999" android:id="@id/merchant_landmark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="17.0dip" android:textColor="#ff999999" android:id="@id/merchant_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/layout_merchant_followed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/merchant_followed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ProgressBar android:id="@id/pbar_merchantdetail_collect" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" style="?android:attr/progressBarStyleLarge" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/img_merchant_line" android:background="@drawable/split_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/merchantinfo_layout" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/rL_wccmerchant_merchantinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/img_merchant_line" android:layout_alignParentBottom="true"
+          >
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lL_wccmerchant_textviews" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true">
+                <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_wccmerchant_commend" android:layout_width="wrap_content" android:layout_height="43.0dip" android:text="推荐" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_wccmerchant_favorable" android:layout_width="wrap_content" android:layout_height="43.0dip" android:text="优惠" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_wccmerchant_welfare" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="43.0dip" android:text="福利" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_wccmerchant_storeinfo" android:layout_width="wrap_content" android:layout_height="43.0dip" android:text="门店信息" android:layout_weight="1.0" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/fL_wccmerchant_merchantinfo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.599976dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.599976dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/lL_wccmerchant_textviews">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_vendordetail_commend" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.wochacha.util.IndicatorBar android:gravity="center" android:orientation="horizontal" android:id="@id/vendordetail_indicatorbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                    <com.wochacha.vendor.CouponGallery android:id="@id/CommendGallery" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spacing="16.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/widget_layout_merchant_favorable" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ListView android:id="@id/merchant_favorable_list" android:background="#fff7f7f7" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@drawable/list_line_black" />
+                    <ImageView android:background="@drawable/list_line_black" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/widget_layout_merchant_welfare" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/tv_drugdetail" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="false" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/widget_layout_merchant_store" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ScrollView android:scrollbars="none" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <RelativeLayout android:id="@id/rL_merchantdetaile_store_opentime" android:background="@drawable/bg_list_above" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/tv_merchantdetaile_store_opentime_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="营业时间:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                                <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:id="@id/tv_merchantdetaile_store_opentime" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_merchantdetaile_store_opentime_title" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@id/rL_merchantdetaile_store_phone" android:background="@drawable/bg_list_middle" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rL_merchantdetaile_store_opentime">
+                                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/tv_merchantdetaile_store_phone_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电话:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                                <TextView android:textSize="17.0sp" android:textColor="@color/black" android:autoLink="phone" android:id="@id/tv_merchantdetaile_store_phone" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_merchantdetaile_store_phone_title" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@id/rL_merchantdetaile_store_address" android:background="@drawable/bg_list_middle" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rL_merchantdetaile_store_phone">
+                                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/tv_merchantdetaile_store_address_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地址:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                                <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:id="@id/tv_merchantdetaile_store_address" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_merchantdetaile_store_address_title" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@id/rL_merchantdetaile_store_website" android:background="@drawable/bg_list_middle" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rL_merchantdetaile_store_address">
+                                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/tv_merchantdetaile_store_website_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网站:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                                <TextView android:textSize="17.0sp" android:textColor="#ff0000ff" android:id="@id/tv_merchantdetaile_store_website" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_merchantdetaile_store_website_title" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@id/rL_merchantdetaile_store_traffic" android:background="@drawable/bg_list_below" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rL_merchantdetaile_store_website">
+                                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/tv_merchantdetaile_store_traffic_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="交通:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                                <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:id="@id/tv_merchantdetaile_store_traffic" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_merchantdetaile_store_traffic_title" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

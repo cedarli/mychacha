@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/rLayout_superlist_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_superlist_item" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_superlist_arrows" android:background="@drawable/arrow_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/rLayout_superlist_detailinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/img_superlist_arrows" android:layout_toRightOf="@id/img_superlist_item" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/rLayout_superlist_detail_content1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/tv_superlist_detail_content1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rLayout_superlist_detail_content2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_below="@id/rLayout_superlist_detail_content1" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0dip" android:id="@id/tv_superlist_detail_content2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0dip" android:id="@id/tv_superlist_detail_content3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_superlist_detail_content2" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rLayout_superlist_detail_content3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_below="@id/rLayout_superlist_detail_content2" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0dip" android:id="@id/tv_superlist_detail_content5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0dip" android:id="@id/tv_superlist_detail_content4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tv_superlist_detail_content5" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

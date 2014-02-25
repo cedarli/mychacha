@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/BusinessPromotionLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/businesspromotion_title_layout" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_businesspromotion_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_businesspromotion_catesift" android:background="@drawable/b_top_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="筛选" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/tv_businesspromotion_titlename" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:singleLine="true" android:layout_toLeftOf="@id/btn_businesspromotion_catesift" android:layout_toRightOf="@id/btn_businesspromotion_back" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/businesspromotion_partition_layout" android:background="#ffdddddd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/businesspromotion_title_layout" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <Spinner android:layout_gravity="center_vertical" android:id="@id/spinner_select_kinds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/businesspromotion_select_kinds" android:layout_weight="1.0" />
+            <Spinner android:layout_gravity="center_vertical" android:id="@id/spinner_select_sorttype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/businesspromotion_select_sorttype" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/layout_businesspromotion_listview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/businesspromotion_partition_layout" />
+    <TextView android:textSize="20.0dip" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_businesspromotion_nocontent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无商家促销的相关信息" android:layout_below="@id/businesspromotion_partition_layout" />
+</RelativeLayout>

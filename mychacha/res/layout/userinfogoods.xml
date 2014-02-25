@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/UserDetailInfoGoodsLayout" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/userdetailinfogoods_title_layout" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+      >
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/tv_userdetailinfogoods_titlename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="商品" android:layout_centerInParent="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_userdetailinfogoods_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_userdetailinfogoods_edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="编辑" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/userdetailinfogoods_title_layout" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/rL_userdetailinfogoods_title" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginLeft="12.599976dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.599976dip" android:layout_marginBottom="8.0dip">
+            <View android:id="@id/goods_vVDivider1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:id="@id/lL_userinfogoods_collect" android:background="@drawable/bg_hor_left_sel" android:clickable="true" android:layout_width="wrap_content" android:layout_height="43.0dip" android:layout_toLeftOf="@id/goods_vVDivider1" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/tv_userdetailinfogoods_collectgoods" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收藏商品" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/lL_userinfogoods_claim" android:background="@drawable/bg_hor_right_nor" android:clickable="true" android:layout_width="wrap_content" android:layout_height="43.0dip" android:layout_toRightOf="@id/goods_vVDivider1" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/tv_userdetailinfogoods_claimgoods" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="认领商品" android:layout_centerVertical="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:orientation="vertical" android:id="@id/lL_userdetailinfogoods_collectgoods" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/userdetailinfogoods_collectgoods_list" android:background="#fff7f7f7" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="#00000000" />
+        </FrameLayout>
+        <FrameLayout android:orientation="vertical" android:id="@id/lL_userdetailinfogoods_claimgoods" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/userdetailinfogoods_claimgoods_list" android:background="#fff7f7f7" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="#00000000" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

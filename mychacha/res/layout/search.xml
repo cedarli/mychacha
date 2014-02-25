@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/searchTitles" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <Button android:textSize="15.0dip" android:textColor="@color/white" android:id="@id/search_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/search_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/searchContents" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/searchTitles" />
+</RelativeLayout>

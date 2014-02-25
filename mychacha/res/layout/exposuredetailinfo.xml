@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ExposureDetailInfo_layout" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/exposuredetailinfo_title_layout" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+      >
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/tv_exposuredetailinfo_titlename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_centerInParent="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_exposuredetailinfo_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_exposuredetailinfo_share" android:background="@drawable/b_top_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="分享微博" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rL_exposuredetailinfo_commodity" android:background="@drawable/bg_panel_small_xml" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip"
+      >
+        <ImageView android:id="@id/img_exposuredetailinfo_commodity_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/arrow_other" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/tv_exposuredetailinfo_commodity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/img_exposuredetailinfo_commodity_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="8.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/rL_exposuredetailinfo_source" android:background="@drawable/bg_list_above" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              >
+                <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/tv_exposuredetailinfo_source_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="来源:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/img_exposuredetailinfo_source_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_other" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff808080" android:id="@id/tv_exposuredetailinfo_source" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toLeftOf="@id/img_exposuredetailinfo_source_arrow" android:layout_toRightOf="@id/tv_exposuredetailinfo_source_title" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/lL_exposuredetailinfo_result" android:background="@drawable/bg_list_middle" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              >
+                <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/tv_exposuredetailinfo_result_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="抽检结果:" />
+                <TextView android:textSize="16.0dip" android:textColor="#ffff0000" android:id="@id/tv_exposuredetailinfo_result" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/lL_exposuredetailinfo_danger" android:background="@drawable/bg_list_middle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              >
+                <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/tv_exposuredetailinfo_danger_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="危害:" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff808080" android:id="@id/tv_exposuredetailinfo_danger" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/lL_exposuredetailinfo_vender" android:background="@drawable/bg_list_middle" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              >
+                <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/tv_exposuredetailinfo_vender_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="生产厂家:" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff808080" android:id="@id/tv_exposuredetailinfo_vender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/lL_exposuredetailinfo_date" android:background="@drawable/bg_list_middle" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              >
+                <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/tv_exposuredetailinfo_date_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="生产日期/批号:" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff808080" android:id="@id/tv_exposuredetailinfo_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/lL_exposuredetailinfo_num" android:background="@drawable/bg_list_below" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              >
+                <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/tv_exposuredetailinfo_num_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="批准文号:" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff808080" android:id="@id/tv_exposuredetailinfo_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/Rlayout_exposuredetailinfo_query" android:background="@drawable/bg_panel" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="#ff808080" android:id="@id/tv_exposuredetailinfo_query_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="若有疑议请拨打：" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="16.0dip" android:autoLink="phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="4006669301" android:layout_toRightOf="@id/tv_exposuredetailinfo_query_title" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

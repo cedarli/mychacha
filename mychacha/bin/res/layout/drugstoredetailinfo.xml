@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/DrugstoreDetailInfoLayout" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/drugstoredetailinfo_title_layout" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+      >
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/tv_drugstoredetailinfo_titlename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="药店详情" android:layout_centerInParent="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_drugstoredetailinfo_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_drugstoredetailinfo_map" android:background="@drawable/b_top_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="地图" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rL_drugstoredetailinfo_drugstorename" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_below="@id/drugstoredetailinfo_title_layout">
+        <TextView android:textSize="20.0dip" android:textColor="#ff000000" android:id="@id/tv_drugstoreinfo_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/scrollview_drugstoredetailinfo_detailinfo" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.599976dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.599976dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/rL_drugstoredetailinfo_drugstorename">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_list_above" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/tv_drugstoreinfo_drugstoretime_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="营业时间:" />
+                <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/tv_drugstoreinfo_drugstoretime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/Rlayout_druginfo_tel" android:background="@drawable/bg_list_middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/tv_drugstoreinfo_drugstoretel_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电话:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0dip" android:textColor="@color/black" android:autoLink="phone" android:id="@id/tv_drugstoreinfo_drugstoretel_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_drugstoreinfo_drugstoretel_title" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/Rlayout_druginfo_address" android:background="@drawable/bg_list_middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/tv_drugstoreinfo_drugstoreaddress_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地址:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/img_druginfo_address_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_other" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/tv_drugstoreinfo_drugstoreaddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/img_druginfo_address_arrow" android:layout_toRightOf="@id/tv_drugstoreinfo_drugstoreaddress_title" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_list_below" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/tv_drugstoreinfo_drugstoreremark_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="备注:" />
+                <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/tv_drugstoreinfo_drugstoreremark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

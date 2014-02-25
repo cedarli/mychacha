@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/moreinfo_main" android:background="@color/title_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/moreinfo_ScrollView" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/moreinfo_m_items0" android:background="@drawable/moreinfo_items_bg" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <LinearLayout android:gravity="center" android:id="@id/moreinfo_switchcity" android:background="@drawable/moreinfo_item_bg_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="left|center" android:id="@id/moreinfo_switchcity_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/city" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/contents_text" android:layout_gravity="center_vertical" android:id="@id/moreinfo_switchcity_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/menu_switchcity" android:layout_weight="1.0" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/blue" android:layout_gravity="center_vertical" android:id="@id/moreinfo_switchcity_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="未知城市" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_other" />
+                </LinearLayout>
+                <ImageView android:id="@id/moreinfo_switchcity_line" android:background="#ffbcbcbc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/moreinfo_switchcity" />
+                <LinearLayout android:gravity="center" android:id="@id/moreinfo_setting" android:background="@drawable/moreinfo_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/moreinfo_switchcity_line">
+                    <ImageView android:layout_gravity="left|center" android:id="@id/moreinfo_setting_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/setting" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/contents_text" android:layout_gravity="center_vertical" android:id="@id/moreinfo_setting_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/menu_setting" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/arrow_other" />
+                </LinearLayout>
+                <ImageView android:id="@id/moreinfo_setting_line" android:background="#ffbcbcbc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/moreinfo_setting" />
+                <LinearLayout android:gravity="center" android:id="@id/moreinfo_share" android:background="@drawable/moreinfo_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/moreinfo_setting_line">
+                    <ImageView android:layout_gravity="left|center" android:id="@id/moreinfo_share_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/sharedwcc" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/contents_text" android:layout_gravity="center_vertical" android:id="@id/moreinfo_share_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/menu_sharedwcc" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/arrow_other" />
+                </LinearLayout>
+                <ImageView android:id="@id/moreinfo_share_line" android:background="#ffbcbcbc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/moreinfo_share" />
+                <LinearLayout android:gravity="center" android:id="@id/moreinfo_activity" android:background="@drawable/moreinfo_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/moreinfo_share_line">
+                    <ImageView android:layout_gravity="left|center" android:id="@id/moreinfo_activity_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/activity" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/contents_text" android:layout_gravity="center_vertical" android:id="@id/moreinfo_activity_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="活动专区" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/arrow_other" />
+                </LinearLayout>
+                <ImageView android:id="@id/moreinfo_activity_line" android:background="#ffbcbcbc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/moreinfo_activity" />
+                <LinearLayout android:gravity="center" android:id="@id/moreinfo_express" android:background="@drawable/moreinfo_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/moreinfo_activity_line">
+                    <ImageView android:layout_gravity="left|center" android:id="@id/moreinfo_express_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/express" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/contents_text" android:layout_gravity="center_vertical" android:id="@id/moreinfo_express_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="快递管理" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/arrow_other" />
+                </LinearLayout>
+                <ImageView android:id="@id/moreinfo_express_line" android:background="#ffbcbcbc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/moreinfo_express" />
+                <LinearLayout android:gravity="center" android:id="@id/moreinfo_update" android:background="@drawable/moreinfo_item_bg_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/moreinfo_express_line">
+                    <ImageView android:layout_gravity="left|center" android:id="@id/moreinfo_update_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_upgrade" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/contents_text" android:layout_gravity="center_vertical" android:id="@id/moreinfo_update_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/menu_update" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_other" />
+                </LinearLayout>
+                <ImageView android:id="@id/moreinfo_update_line" android:background="#ffbcbcbc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/moreinfo_update" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/moreinfo_m_items1" android:background="@drawable/moreinfo_items_bg" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_below="@id/moreinfo_m_items0">
+                <LinearLayout android:gravity="center" android:id="@id/moreinfo_help" android:background="@drawable/moreinfo_item_bg_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="left|center" android:id="@id/moreinfo_help_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_help" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/contents_text" android:layout_gravity="center_vertical" android:id="@id/moreinfo_help_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/menu_help" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_other" />
+                </LinearLayout>
+                <ImageView android:id="@id/moreinfo_help_line" android:background="#ffbcbcbc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/moreinfo_help" />
+                <LinearLayout android:gravity="center" android:id="@id/moreinfo_feedback" android:background="@drawable/moreinfo_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/moreinfo_help_line">
+                    <ImageView android:layout_gravity="left|center" android:id="@id/moreinfo_feedback_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/feedback" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/contents_text" android:layout_gravity="center_vertical" android:id="@id/moreinfo_feedback_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/menu_feedback" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/arrow_other" />
+                </LinearLayout>
+                <ImageView android:id="@id/moreinfo_feedback_line" android:background="#ffbcbcbc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/moreinfo_feedback" />
+                <LinearLayout android:gravity="center" android:id="@id/moreinfo_service" android:background="@drawable/moreinfo_item_bg_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/moreinfo_feedback_line">
+                    <ImageView android:layout_gravity="left|center" android:id="@id/moreinfo_service_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/service" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/contents_text" android:layout_gravity="center_vertical" android:id="@id/moreinfo_share_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/menu_service" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_other" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/moreinfo_m_items2" android:background="@drawable/moreinfo_items_bg" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:layout_below="@id/moreinfo_m_items1">
+                <LinearLayout android:gravity="center" android:id="@id/moreinfo_cooperate" android:background="@drawable/moreinfo_item_bg_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="left|center" android:id="@id/moreinfo_cooperate_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cooperate" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/contents_text" android:layout_gravity="center_vertical" android:id="@id/moreinfo_cooperate_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/menu_cooperate" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_other" />
+                </LinearLayout>
+                <ImageView android:id="@id/moreinfo_cooperate_line" android:background="#ffbcbcbc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/moreinfo_cooperate" />
+                <LinearLayout android:gravity="center" android:id="@id/moreinfo_about" android:background="@drawable/moreinfo_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/moreinfo_cooperate_line">
+                    <ImageView android:layout_gravity="left|center" android:id="@id/moreinfo_about_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/about" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/contents_text" android:layout_gravity="center_vertical" android:id="@id/moreinfo_about_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/menu_about" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/arrow_other" />
+                </LinearLayout>
+                <ImageView android:id="@id/moreinfo_about_line" android:background="#ffbcbcbc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/moreinfo_about" />
+                <LinearLayout android:gravity="center" android:id="@id/moreinfo_statement" android:background="@drawable/moreinfo_item_bg_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/moreinfo_about_line">
+                    <ImageView android:layout_gravity="left|center" android:id="@id/moreinfo_statement_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/statement" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/contents_text" android:layout_gravity="center_vertical" android:id="@id/moreinfo_statement_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:text="@string/menu_statement" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_other" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/moreinfo_m_items2" />
+            <TextView android:textColor="@color/contents_text" android:gravity="center" android:id="@id/moreinfo_version_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_below="@id/moreinfo_m_items2" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/exposure_title" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/exposure_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0dip" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="曝光栏" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/exposure_buttons" android:background="@color/btn_bkg" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_below="@id/exposure_title">
+        <com.wochacha.util.WccTabBar android:gravity="center" android:id="@id/exposure_tabbar" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_black" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="70.0dip" android:text="黑榜" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginRight="70.0dip" android:text="红榜" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="16.0dip" android:textColor="@color/look_price" android:ellipsize="marquee" android:gravity="center" android:id="@id/exposure_info" android:background="@color/info_bkg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:scrollHorizontally="true" android:singleLine="true" android:layout_below="@id/exposure_buttons" android:marqueeRepeatLimit="marquee_forever" />
+    <FrameLayout android:id="@id/firstContent" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/exposure_info" />
+</RelativeLayout>

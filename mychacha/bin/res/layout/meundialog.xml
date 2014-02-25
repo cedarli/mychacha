@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/shareTitle" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/share_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/share_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="软件分享" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/shareTitle"
+      >
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/listLinearLayout" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:id="@id/ListShared" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:drawSelectorOnTop="false" android:scrollingCache="false" android:divider="#ffdecb9c" android:dividerHeight="2.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

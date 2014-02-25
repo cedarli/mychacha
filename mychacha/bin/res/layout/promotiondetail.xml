@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/PromotionDetailLayout" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/promotion_title_layout" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+      >
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/tv_promotion_titlename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="促销详情" android:layout_centerInParent="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_promotiondetail_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_promotiondetail_compare" android:background="@drawable/b_top_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="比价" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/promotion_detail_image_layout" android:background="#ffb4b4b4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/promotion_title_layout">
+        <ImageView android:layout_gravity="center" android:id="@id/promotion_detail_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/promotion_detail_info_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:layout_below="@id/promotion_detail_image_layout">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/promotion_detail_productname" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_list_above" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="促销中:" />
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/promotion_detail_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/lLayout_promotion_detail_price" android:background="@drawable/bg_list_middle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="特价:" />
+                        <TextView android:textSize="18.0dip" android:textColor="#ffff0000" android:id="@id/promotion_detail_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/blue" android:id="@id/tv_promotion_other_merchant" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="(查看其它商家促销价)" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_list_middle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分类:" />
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/promotion_detail_partition" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/rLayout_promotion_detail_merchant" android:background="@drawable/bg_list_middle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/tv_promotion_detail_merchant_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商家:" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/img_promotion_detail_merchant_arrows" android:background="@drawable/arrow_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/promotion_detail_merchant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/img_promotion_detail_merchant_arrows" android:layout_toRightOf="@id/tv_promotion_detail_merchant_title" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_list_middle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="条码:" />
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/promotion_detail_barcode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_list_middle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="规格:" />
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/promotion_detail_standard" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_list_middle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="厂家:" />
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/promotion_detail_manufacturer" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/bg_list_below" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="备注:" />
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/promotion_detail_remark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

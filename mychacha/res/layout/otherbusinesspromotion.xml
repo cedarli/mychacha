@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rLayout_other_business_promotion" android:background="@drawable/main_bg" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rLayout_other_business_promotion_title" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <Button android:textSize="15.0dip" android:textColor="@color/white" android:id="@id/btn_other_business_promotion_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="15.0dip" android:textColor="@color/white" android:id="@id/btn_other_business_promotion_map" android:background="@drawable/b_top_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="地图" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0dip" android:textColor="@color/white" android:id="@id/tv_other_business_promotion_titlename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/btn_other_business_promotion_map" android:layout_toRightOf="@id/btn_other_business_promotion_back" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rLayout_other_business_promotion_location" android:background="#ff3a3735" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rLayout_other_business_promotion_title">
+        <com.wochacha.util.LocationUpdateBar android:id="@id/other_business_promotion_locationUpdatebar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/rL_other_business_promotion_detaioninfo" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rLayout_other_business_promotion_location"
+      >
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/lLayout_other_business_promotion_titleinfo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Spinner android:layout_gravity="left|center" android:id="@id/spinner_distance_other_business_promotion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:prompt="@string/merchant_select_distance" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/fLayout_other_business_promotion_detailinfo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/lLayout_other_business_promotion_titleinfo" />
+    </RelativeLayout>
+</RelativeLayout>

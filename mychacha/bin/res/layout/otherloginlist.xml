@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/otherloginlist" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      >
+        <ImageView android:id="@id/otherloginimg1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_centerVertical="true" />
+        <TextView android:textColor="#ff000000" android:id="@id/otherlogincontext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="6.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/otherloginimg2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:layout_centerVertical="true" />
+    </LinearLayout>
+</LinearLayout>

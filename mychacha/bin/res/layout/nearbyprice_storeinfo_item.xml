@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/lL_nearbyprice_item" android:background="@drawable/bg_list0" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_nearbyprice_store_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentLeft="true">
+        <FrameLayout android:id="@id/img_nearbyprice_store_frame" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/img_nearbyprice_store" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/photoframe" />
+        </FrameLayout>
+        <ImageView android:id="@id/img_nearbyprice_store_arrows" android:background="@drawable/arrow_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/layout_nearbyprice_store_distance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/img_nearbyprice_store_arrows" android:layout_toRightOf="@id/img_nearbyprice_store_frame" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_nearbyprice_store_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/tv_nearbyprice_store_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <Button android:textSize="16.0dip" android:layout_gravity="right" android:id="@id/btn_nearbyprice_changeprice" android:background="@drawable/account_btn_attention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="纠错" android:layout_below="@id/tv_nearbyprice_store_distance" android:layout_centerHorizontal="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/layout_nearbyprice_store_info" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/tv_nearbyprice_store_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="16.0dip" android:textColor="#ffff0000" android:id="@id/tv_nearbyprice_store_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

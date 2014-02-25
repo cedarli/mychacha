@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rLayout_search_promotion_goods" android:background="@drawable/main_bg" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rLayout_search_promotion_goods_title" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <Button android:textSize="15.0dip" android:textColor="@color/white" android:id="@id/btn_search_promotion_goods_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:textSize="15.0dip" android:textColor="@color/white" android:id="@id/btn_search_promotion_goods_map" android:background="@drawable/b_top_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="地图" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_search_promotion_goods_titlename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/btn_search_promotion_goods_map" android:layout_toRightOf="@id/btn_search_promotion_goods_back" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rLayout_search_promotion_goods_location" android:background="#ff3a3735" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rLayout_search_promotion_goods_title">
+        <com.wochacha.util.LocationUpdateBar android:id="@id/search_promotion_goods_locationUpdatebar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/rL_search_promotion_goods_detaioninfo" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rLayout_search_promotion_goods_location"
+      >
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/lLayout_search_promotion_goods_titleinfo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Spinner android:layout_gravity="left|center" android:id="@id/spinner_distance_search_promotion_goods" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:prompt="@string/merchant_select_distance" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/lLayout_sort_promotion_goods_titleinfo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip">
+                <Spinner android:id="@id/spinner_sort_promotion_goods_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/select_goods_type" />
+                <Spinner android:id="@id/spinner_sort_promotion_goods_subtype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/select_goods_subtype" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/fLayout_search_promotion_goods_detailinfo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/lLayout_search_promotion_goods_titleinfo" />
+    </RelativeLayout>
+</RelativeLayout>

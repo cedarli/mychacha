@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/UserDetailInfoPointLayout" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/userdetailinfopoint_title_layout" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+      >
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/tv_userdetailinfopoint_titlename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="积分" android:layout_centerInParent="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_userdetailinfopoint_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lL_userdetailinfopoint_curscores" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/userdetailinfopoint_title_layout">
+        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前积分：" />
+        <TextView android:textSize="18.0dip" android:textColor="#ffff0000" android:id="@id/tv_userdetailinfopoint_curscores" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/lL_userdetailinfopoint_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.5999756dip" android:layout_marginTop="8.0dip" android:layout_marginRight="4.5999756dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/lL_userdetailinfopoint_curscores" android:layout_alignParentBottom="true">
+        <ListView android:id="@id/userdetailinfopoint_list" android:background="@drawable/bg_list_all" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@drawable/list_line" />
+    </LinearLayout>
+</RelativeLayout>

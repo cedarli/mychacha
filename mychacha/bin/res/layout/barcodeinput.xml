@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/barcodeinput" android:background="#eebbbbbb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/select_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="请选择条码类型:" android:layout_alignParentTop="true" />
+            <Spinner android:id="@id/btn_select_format" android:background="@drawable/scan_input_sel" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:prompt="@string/select_format" android:layout_below="@id/select_info" android:layout_centerInParent="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/input_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/inputbarcode" android:layout_below="@id/btn_select_format" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/input_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/input_info">
+                <EditText android:textSize="18.0sp" android:id="@id/input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:scrollHorizontally="true" android:singleLine="true" android:maxLength="20" android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" android:layout_toLeftOf="@id/compare" android:inputType="textVisiblePassword" />
+                <Button android:id="@id/compare" android:background="@drawable/input_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout android:gravity="center" android:background="@drawable/mbottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/scroll">
+        <Button android:gravity="center" android:id="@id/scanact" android:background="@drawable/input_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentLeft="true" />
+        <Button android:gravity="center" android:id="@id/scanlocalimg" android:background="@drawable/search_unsel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true" />
+        <Button android:gravity="center" android:id="@id/inputcancel" android:background="@drawable/input_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

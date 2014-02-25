@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/DrugStoreInfoLayout" android:background="#eeaaaaaa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/drugstoreinfo_title_layout" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+      >
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/tv_drugstoreinfo_titlename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="药店信息" android:layout_centerInParent="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_drugstoreinfo_back" android:background="@drawable/b_backtop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/drugstoreinfo_mallname_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/drugstoreinfo_title_layout">
+        <TextView android:textSize="20.0dip" android:textColor="#ff000000" android:id="@id/drugstoreinfo_mallname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/img_drugstoreinfo_line" android:background="@drawable/list_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/drugstoreinfo_mallname_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_drugstoreinfo_substoreinfo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/img_drugstoreinfo_line">
+        <ListView android:id="@id/drugstoreinfo_substoreinfo_list" android:background="#fff7f7f7" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@drawable/list_line_black" />
+        <ImageView android:background="@drawable/list_line_black" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/UserCommonSoftwareLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/usercommonsoftware_title_layout" android:background="@drawable/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+      >
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/tv_usercommonsoftware_titlename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="常用软件" android:layout_centerInParent="true" />
+        <Button android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/btn_usercommonsoftware_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="返回" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/usercommonsoftware_title_layout" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/lL_usercommonsoftware_title" android:clickable="true" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_marginLeft="12.599976dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.599976dip" android:layout_marginBottom="8.0dip">
+            <LinearLayout android:gravity="center" android:id="@id/lL_usercommonsoftware_excellent" android:background="@drawable/bg_horizon_left_sel" android:clickable="true" android:layout_width="wrap_content" android:layout_height="43.0dip" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/tv_usercommonsoftware_excellent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="精品推荐" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/lL_usercommonsoftware_hot" android:background="@drawable/bg_horizon_mid" android:clickable="true" android:layout_width="wrap_content" android:layout_height="43.0dip" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/tv_usercommonsoftware_hot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最热应用" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/lL_usercommonsoftware_must" android:background="@drawable/bg_horizontal_right" android:clickable="true" android:layout_width="wrap_content" android:layout_height="43.0dip" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:id="@id/tv_usercommonsoftware_must" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="装机必备" android:layout_centerVertical="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lL_usercommonsoftware_excellentsoft" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/usercommonsoftware_excellentsoft_list" android:background="#fff7f7f7" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@drawable/list_line_black" />
+            <ImageView android:background="@drawable/list_line_black" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lL_usercommonsoftware_hotsoft" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/usercommonsoftware_hotsoft_list" android:background="#fff7f7f7" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@drawable/list_line_black" />
+            <ImageView android:background="@drawable/list_line_black" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lL_usercommonsoftware_mustsoft" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/usercommonsoftware_mustsoft_list" android:background="#fff7f7f7" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@drawable/list_line_black" />
+            <ImageView android:background="@drawable/list_line_black" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

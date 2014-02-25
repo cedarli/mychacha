@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:id="@id/authentication" 
+    android:background="@drawable/main_bg" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout 
+        android:id="@id/otherlogintitlebar" 
+        android:background="@drawable/title" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentTop="true">
+        <TextView 
+            android:textSize="20.0dip" 
+            android:textColor="@color/status_text" 
+            android:id="@id/authenticaiton_title" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="手机身份绑定" 
+            android:layout_centerInParent="true" />
+        <Button 
+            android:textSize="15.0dip" 
+            android:textColor="#ffffffff" 
+            android:id="@id/btn_authentication_back" 
+            android:background="@drawable/b_backtop" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="5.0dip" 
+            android:text="返回" 
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10.0dip">
+        <EditText 
+            android:id="@id/authentication_phonenumber" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="20.0dip" 
+            android:layout_marginTop="6.0dip" 
+            android:layout_marginRight="6.0dip" 
+            android:layout_marginBottom="6.0dip" 
+            android:hint="请输入手机号" 
+            android:singleLine="true" 
+            android:maxLength="11" 
+            android:inputType="number" />
+        <Button 
+            android:textSize="18.0dip" 
+            android:textColor="@color/contents_text" 
+            android:id="@id/authenticaiton_getauthcode" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="20.0dip" 
+            android:layout_marginTop="6.0dip" 
+            android:layout_marginRight="6.0dip" 
+            android:layout_marginBottom="6.0dip" 
+            android:text="获取验证码" 
+            android:layout_toRightOf="@id/authentication_phonenumber" />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+        <EditText 
+            android:textSize="18.0dip" 
+            android:id="@id/authenticaiton_authcode" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="20.0dip" 
+            android:layout_marginTop="6.0dip" 
+            android:layout_marginRight="6.0dip" 
+            android:layout_marginBottom="6.0dip" 
+            android:hint="请输入验证码" 
+            android:singleLine="true" 
+            android:maxLength="6" 
+            android:inputType="number" />
+        <Button 
+            android:textSize="18.0dip" 
+            android:textColor="@color/contents_text" 
+            android:id="@id/authentication_affirm" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="20.0dip" 
+            android:layout_marginTop="6.0dip" 
+            android:layout_marginRight="6.0dip" 
+            android:layout_marginBottom="6.0dip" 
+            android:text="提交验证码" 
+            android:layout_toRightOf="@id/authenticaiton_authcode" />
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10.0dip">
+        <TextView 
+            android:textSize="15.0dip" 
+            android:textColor="@color/contents_text" 
+            android:gravity="center" 
+            android:id="@id/authentication_attention" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:text="注意：同一设备一天只能申请3次验证码" />
+    </LinearLayout>
+</LinearLayout>
