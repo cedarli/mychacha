@@ -49,227 +49,241 @@
         android:layout_height="fill_parent" 
         android:layout_above="@id/main_tabs" 
         android:layout_below="@id/wccMainTitle" >
-
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <TableRow
-                android:id="@+id/tableRow1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" >
-	                     <SearchView
-					        android:id="@+id/btn_search"
-					        android:layout_width="0px"
-					        android:layout_height="match_parent"
-					        android:layout_weight="1"
-					        android:iconifiedByDefault="false"
-					        android:inputType="textFilter"
-					        android:queryHint="请输入商品名字" >
-					    </SearchView>
-                </LinearLayout>
-            </TableRow>
-            <TableRow
-                android:id="@+id/tableRow2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" >
-						<ImageView
-		                    android:id="@id/btn_look"
+	        <TableLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent" >
+		            <TableRow
+		                android:id="@+id/tableRow1"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		
+		                <LinearLayout
 		                    android:layout_width="wrap_content"
-		                    android:layout_height="wrap_content"
-		                    android:gravity="center"
-		                    android:src="@drawable/home_look" />
-	                    <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_curve" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_curve" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-                        <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_rank" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_rank" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-                        <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_software" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_software" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-                        <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_share" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_share" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-                </LinearLayout>
-            </TableRow>
-            <TableRow
-                android:id="@+id/tableRow3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-                	<LinearLayout                    
-                	    android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" >
-		                <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_curve" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_curve" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-	                     <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_rank" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_rank" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-	                    <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_software" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_software" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-		                <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_share" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_share" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-		                <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_recharge" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_recharge" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-	                </LinearLayout>
-            </TableRow>
-            <TableRow
-                android:id="@+id/tableRow4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-                	<LinearLayout 
-                	    android:layout_width="wrap_content"
-                	    android:layout_height="wrap_content">
-		                <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_rank" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_rank"
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-	                    <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_software" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_software" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-	                    <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_share" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_share" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-	                    <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_recharge" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_recharge" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-	                   <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_promotion" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_promotion" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-	                   </LinearLayout>
-            </TableRow>
-                <TableRow
-                android:id="@+id/tableRow5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-                	<LinearLayout 
-                	    android:layout_width="wrap_content"
-                	    android:layout_height="wrap_content">
-		                <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_rank" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_rank"
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-	                    <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_software" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_software" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-	                    <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_share" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_share" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-	                    <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_recharge" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_recharge" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-	                   <ImageView 
-					        android:gravity="center" 
-					        android:id="@id/btn_promotion" 
-					        android:layout_width="wrap_content" 
-					        android:layout_height="wrap_content" 
-					        android:src="@drawable/home_promotion" 
-					        android:layout_alignParentBottom="true" 
-					        android:layout_centerHorizontal="true" />
-	                   </LinearLayout>
-            </TableRow>
-        </TableLayout>
+		                    android:layout_height="wrap_content" >
+			                     <SearchView
+							        android:id="@+id/btn_search"
+							        android:layout_width="0px"
+							        android:layout_height="match_parent"
+							        android:layout_weight="1"
+							        android:iconifiedByDefault="false"
+							        android:inputType="textFilter"
+							        android:queryHint="请输入商品名字" >
+							    </SearchView>
+		                </LinearLayout>
+		            </TableRow>
+		            <TableRow
+		                android:id="@+id/tableRow2"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+			            <GridView 
+						    android:id="@+id/gridview"
+						    android:layout_width="fill_parent" 
+						    android:layout_height="fill_parent"
+						    android:columnWidth="90dp"
+						    android:numColumns="auto_fit"
+						    android:verticalSpacing="10dp"
+						    android:horizontalSpacing="10dp"
+						    android:stretchMode="columnWidth"
+						    android:gravity="center"
+						/>
+		            </TableRow>
+		           <!--  <TableRow
+		                android:id="@+id/tableRow3"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		                <LinearLayout
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content" >
+								<ImageView
+				                    android:id="@id/btn_look"
+				                    android:layout_width="wrap_content"
+				                    android:layout_height="wrap_content"
+				                    android:gravity="center"
+				                    android:src="@drawable/home_look" />
+			                    <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_curve" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_curve" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+		                        <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_rank" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_rank" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+		                        <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_software" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_software" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+		                        <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_share" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_share" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+		                </LinearLayout>
+		            </TableRow>
+		            <TableRow
+		                android:id="@+id/tableRow4"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		                	<LinearLayout                    
+		                	    android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content" >
+				                <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_curve" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_curve" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+			                     <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_rank" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_rank" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+			                    <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_software" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_software" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+				                <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_share" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_share" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+				                <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_recharge" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_recharge" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+			                </LinearLayout>
+		            </TableRow>
+		            <TableRow
+		                android:id="@+id/tableRow5"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		                	<LinearLayout 
+		                	    android:layout_width="wrap_content"
+		                	    android:layout_height="wrap_content">
+				                <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_rank" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_rank"
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+			                    <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_software" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_software" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+			                    <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_share" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_share" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+			                    <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_recharge" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_recharge" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+			                   <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_promotion" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_promotion" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+			                   </LinearLayout>
+		            </TableRow>
+	                <TableRow
+		                android:id="@+id/tableRow6"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		                	<LinearLayout 
+		                	    android:layout_width="wrap_content"
+		                	    android:layout_height="wrap_content">
+				                <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_rank" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_rank"
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+			                    <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_software" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_software" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+			                    <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_share" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_share" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+			                    <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_recharge" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_recharge" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+			                   <ImageView 
+							        android:gravity="center" 
+							        android:id="@id/btn_promotion" 
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content" 
+							        android:src="@drawable/home_promotion" 
+							        android:layout_alignParentBottom="true" 
+							        android:layout_centerHorizontal="true" />
+		                   </LinearLayout>
+					</TableRow> -->
+				</TableLayout>
 
-    </FrameLayout>
+    	</FrameLayout>
     <LinearLayout 
         android:gravity="center" 
         android:orientation="horizontal" 
@@ -364,13 +378,7 @@
 				        android:layout_height="wrap_content"
 				        android:text="更多"/> 
 	        </LinearLayout>
-	        
-       <!--  <com.wochacha.util.ImageTextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/main_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首页" android:layout_weight="1.0" />
-        <com.wochacha.util.ImageTextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/main_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价格" android:layout_weight="1.0" />
-        <com.wochacha.util.ImageTextView android:gravity="center" android:id="@id/main_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="扫描" android:layout_weight="1.0" />
-        <com.wochacha.util.ImageTextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/main_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索" android:layout_weight="1.0" />
-        <com.wochacha.util.ImageTextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/main_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" android:layout_weight="1.0" />
-        -->
+
     </LinearLayout>
     <ImageView 
         android:gravity="center" 

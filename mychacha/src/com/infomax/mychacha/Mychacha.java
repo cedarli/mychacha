@@ -1,5 +1,6 @@
 package com.infomax.mychacha;
 
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
@@ -9,6 +10,8 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.GridView;
 
 public class Mychacha extends Activity {
 	 private Context mContext;
@@ -20,6 +23,7 @@ public class Mychacha extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		mContext = this;
+
 		mSelectCityBtn=(Button)this.findViewById(R.id.SelectedCity);
 		mSelectCityBtn.setText("上海");
 		mSelectCityBtn.setOnClickListener(new OnClickListener(){
@@ -31,8 +35,12 @@ public class Mychacha extends Activity {
 			bundle.putString("hello", "hello");
 			intent.putExtras(bundle);
 			startActivityForResult(intent, selectCity);
-			// startActivity(intent);// 璺宠浆鏂规硶2
+			// startActivity(intent);// 跳转方法2
 		   }});
+		
+        GridView gridview = (GridView) findViewById(R.id.gridview);
+        //Log.d("cedar","gridview="+gridview);
+        gridview.setAdapter(new imageHomeAdapter(this));
 	}
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {

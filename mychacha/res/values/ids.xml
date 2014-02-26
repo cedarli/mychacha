@@ -523,6 +523,7 @@
     <item type="id" name="imgLogo">false</item>
     <item type="id" name="MainTitle">false</item>
     <item type="id" name="SelectedCity">false</item>
+    <item type="id" name="gridview">false</item>
     <item type="id" name="main_content">false</item>
     <item type="id" name="main_tabs">false</item>
     <item type="id" name="main_home">false</item>
